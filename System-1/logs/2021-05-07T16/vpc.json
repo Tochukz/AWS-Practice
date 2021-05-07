@@ -1,0 +1,27 @@
+{
+    "Vpc": {
+        "CidrBlock": "172.16.0.0/16",
+        "DhcpOptionsId": "dopt-a5d3e5cd",
+        "State": "pending",
+        "VpcId": "vpc-091c161ae31b547b2",
+        "OwnerId": "991645433465",
+        "InstanceTenancy": "default",
+        "Ipv6CidrBlockAssociationSet": [],
+        "CidrBlockAssociationSet": [
+            {
+                "AssociationId": "vpc-cidr-assoc-0b1242b651b1b11b6",
+                "CidrBlock": "172.16.0.0/16",
+                "CidrBlockState": {
+                    "State": "associated"
+                }
+            }
+        ],
+        "IsDefault": false,
+        "Tags": [
+            {
+                "Key": "name",
+                "Value": "chucks-auto-vpc"
+            }
+        ]
+    }
+}
