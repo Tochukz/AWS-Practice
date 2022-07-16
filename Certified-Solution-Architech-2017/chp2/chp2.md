@@ -1,9 +1,12 @@
 ## Amazon Simple Storage Service (Amazon S3) and Amazon Glacier Storage 
 
-### Exercies
+### Exercises
 2.1) Create an Amazon Simple Storage Server (Amazon S3) Bucket  
 2.2) Upload, Make Public, Rename, and Delete Objects in Your Bucket  
-
+2.3) Enable Version Control
+2.4) Delete an Object and Then Restore It
+2.5) Lifecycle Management
+2.6) Enable Static Hosting on Your Bucket
 
 ### Available Commands  
 * cp
