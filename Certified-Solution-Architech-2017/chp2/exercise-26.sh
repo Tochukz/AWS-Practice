@@ -18,3 +18,4 @@ aws s3 sync dist/ s3://nhis.k-medics.site
 ### Using custom domain 
 # To access the site using your own domain: 
 # Add a new CNAME record with the subdomain (nhis) as the host and the bucket endpoint (nhis.k-medics.site.s3-website.eu-west-2.amazonaws.com) as the value. 
+# You can then access the site at nhis.k-medics.site 
