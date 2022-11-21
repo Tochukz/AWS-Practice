@@ -1,4 +1,5 @@
 .vscode
 .env
 logs/*
-node_modules
+node_modules 
+results
