@@ -7,10 +7,10 @@ const { createVPC, createSubnet } = require('./src/commands');
 
 const { CREATE_VPC, CREATE_SUBNETS } = process.env;
 
-const red = "\x1b[31m" ;
+const red = "\x1b[31m";
 const green = "\x1b[32m";
 const yellow = "\x1b[33m";
-const white = "\x1b[37m" ;
+const white = "\x1b[37m";
 
 const theHour = `logs/${new Date().toISOString().substr(0, 13)}`;
 fs.ensureDir(path.join(__dirname, theHour), (err) => {
@@ -44,9 +44,9 @@ function createSubnet() {
     console.info('::: Creating Subnets...');
   fs.readJson(path.join(__dirname, `${theHour}/vpc.json`))
     .then(data => {
-       const vpcID = data.Vpc. VpcId;
+       const vpcID = data.Vpc.VpcId;
        const createSubnetCmd  = createSubnet(vpcID);
-       
+
     })
     .catch(err => {
        console.info(red, err.message, white);
@@ -56,4 +56,3 @@ function createSubnet() {
 function writeToFile(filename, output) {
     fs.writeFileSync(path.join(__dirname, `${theHour}/${filename}`), output);
 }
-
